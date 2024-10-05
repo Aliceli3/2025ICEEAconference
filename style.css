@@ -1,0 +1,71 @@
+.title-with-background {  
+    background-image: url('Background.png'); /* 替换为你的图片路径 */  
+    background-size: 100% 100%; /* 让背景图覆盖整个标题区域 */  
+    background-position: center; /* 背景图居中 */  
+    color: transparent; /* 文字颜色设为透明，使背景图透过文字显示 */  
+    
+    font-size: 3em; /* 调整字体大小 */  
+    
+    font-weight: bold; /* 调整字体粗细 */  
+    
+    text-align: center; /* 文本居中 */  
+    
+    padding: 150px; /* 内边距，用于显示背景图区域 */  
+    
+    margin: 0px; /* 外边距，用于与其他内容保持间距 */  
+}
+
+.scroll-container {  
+    display: flex;  
+    margin-top: 5px; /* 图片和标题之间的间距 */  
+    font-family: Times New Roman; /* 字体 */  
+    font-size: 14px; /* 字体大小 */  
+    color: #333; /* 字体颜色 */  
+    white-space: nowrap; /* 防止标题换行 */
+    overflow-x: auto; /* 允许水平滚动 */  
+    scroll-snap-type: x mandatory; /* 使用CSS滚动捕捉 */  
+    -webkit-overflow-scrolling: touch; /* 优化移动端滚动 */  
+}  
+  
+.scroll-item {  
+    scroll-snap-align: start; /* 捕捉滚动项到容器的开始位置 */  
+    flex: none; /* 防止flex项目自动调整大小 */  
+    margin-right: 10px; /* 设置滚动项之间的间距（可选） */  
+    text-align: center; /* 文字居中（可选） */  
+}  
+  
+.scroll-item img {  
+    max-width: 300pt; /* 图片宽度自适应 */  
+    height: 100pt; /* 保持图片宽高比 */  
+    display: block; /* 移除图片底部的间隙 */  
+    margin: 0 auto; /* 图片居中（可选） */  
+}  
+  
+.scroll-item p {  
+    margin: 10px 0; /* 文字上下间距（可选） */  
+}
+.register-button {  
+            background-color: green; /* 设置按钮背景颜色为绿色 */  
+            color: white; /* 设置按钮文本颜色为白色 */  
+            border: none; /* 移除按钮边框 */  
+            padding: 10px 20px; /* 设置按钮内边距 */  
+            text-align: center; /* 设置按钮文本居中对齐 */  
+            text-decoration: none; /* 移除按钮文本下划线 */  
+            display: inline-block; /* 设置按钮为内联块级元素 */  
+            font-size: 16px; /* 设置按钮文本字体大小 */  
+            margin: 4px 2px; /* 设置按钮外边距 */  
+            cursor: pointer; /* 设置鼠标悬停在按钮上时显示为手形 */  
+            border-radius: 5px; /* 设置按钮边框圆角 */  
+        }  
+.register-button:hover {  
+            background-color: darkgreen; /* 设置鼠标悬停在按钮上时按钮背景颜色变深 */  
+        }  
+
+
+
+
+
+
+
+
+
