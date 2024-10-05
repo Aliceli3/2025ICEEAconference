@@ -1,0 +1,77 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Registration Form</title>  
+    <style>  
+        body {  
+            font-family: Times New Roman;  
+	    font-size: 26px;
+	    text-align: center;
+	    margin:0;
+	    height: 100vh;
+   	    display: flex;
+	    justify-content:center;
+	    align-items: center;
+        }  
+	.container {  
+            max-width: 1000px; 
+	    max-height: 800px; 
+            margin: auto;  
+            padding: 20px;  
+            border: 1px solid #ccc;  
+            border-radius: 5px;  
+        }  
+        .back-button {  
+           display: block;
+	   font-family: Times New Roman;
+	   font-size: 24px;
+	   margin: 5px;
+	   padding: 10px 20px;
+        }  
+	.submit-button{
+	   font-family: Times New Roman;
+	   font-size:28px;
+	   text-align: center;
+	}
+        .success {  
+            color: green;  
+	    font-size: 24px;
+            font-weight: bold;  
+            text-align: center;  
+            margin-top: 20px;  
+        }  
+    </style>  
+</head>  
+<body>  
+       <div class="container">  
+        <button class="back-button" onclick="window.location.href='main.html'">&laquo; Back</button>  
+        <h1>Registration Form</h1>  
+        <form id="registrationForm">  
+            <label for="name">Name:</label>  
+            <input type="text" id="name" name="name" required><br><br>  
+            <label for="organization">Organization:</label>  
+            <input type="text" id="organization" name="organization" required><br><br>  
+            <label for="email">Email Address:</label>  
+            <input type="email" id="email" name="email" required><br><br>  
+            <label for="phone">Phone Number:</label>  
+            <input type="tel" id="phone" name="phone" required pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" placeholder="Format: 012-3456-7890"><br><br>  
+            <button class="submit-button" type="submit">Submit</button>  
+        </form>  
+        <div id="successMessage" class="success" style="display:none;">Registration successful! Please wait for an automatic jump back to the main page...</div>  
+    </div>  
+       <script>  
+        document.getElementById('registrationForm').addEventListener('submit', function(event) {  
+            event.preventDefault(); // Prevent the form from submitting the traditional way  
+            // Here you would normally send the form data to a server  
+            // But for this example, we'll just show the success message and redirect  
+            document.getElementById('successMessage').style.display = 'block';  
+            // Optionally, you can add a setTimeout to redirect back to the index page after a few seconds  
+            setTimeout(function() {  
+                window.location.href = 'main.html';  
+            }, 3000); // 3000 milliseconds = 3 seconds  
+        });  
+    </script>  
+</body>  
+</html>
