@@ -1,66 +1,70 @@
 .title-with-background {  
-    background-image: url('Background.png'); /* Ìæ»»ÎªÄãµÄÍ¼Æ¬Â·¾¶ */  
-    background-size: 100% 100%; /* ÈÃ±³¾°Í¼¸²¸ÇÕû¸ö±êÌâÇøÓò */  
-    background-position: center; /* ±³¾°Í¼¾ÓÖĞ */  
-    color: transparent; /* ÎÄ×ÖÑÕÉ«ÉèÎªÍ¸Ã÷£¬Ê¹±³¾°Í¼Í¸¹ıÎÄ×ÖÏÔÊ¾ */  
+    background-image: url('Background.png'); /* æ›¿æ¢ä¸ºä½ çš„å›¾ç‰‡è·¯å¾„ */  
+    background-size: 100% 100%; /* è®©èƒŒæ™¯å›¾è¦†ç›–æ•´ä¸ªæ ‡é¢˜åŒºåŸŸ */  
+    background-position: center; /* èƒŒæ™¯å›¾å±…ä¸­ */  
+    color: transparent; /* æ–‡å­—é¢œè‰²è®¾ä¸ºé€æ˜ï¼Œä½¿èƒŒæ™¯å›¾é€è¿‡æ–‡å­—æ˜¾ç¤º */  
     
-    font-size: 3em; /* µ÷Õû×ÖÌå´óĞ¡ */  
+    font-size: 3em; /* è°ƒæ•´å­—ä½“å¤§å° */  
     
-    font-weight: bold; /* µ÷Õû×ÖÌå´ÖÏ¸ */  
+    font-weight: bold; /* è°ƒæ•´å­—ä½“ç²—ç»† */  
     
-    text-align: center; /* ÎÄ±¾¾ÓÖĞ */  
+    text-align: center; /* æ–‡æœ¬å±…ä¸­ */  
     
-    padding: 150px; /* ÄÚ±ß¾à£¬ÓÃÓÚÏÔÊ¾±³¾°Í¼ÇøÓò */  
+    padding: 150px; /* å†…è¾¹è·ï¼Œç”¨äºæ˜¾ç¤ºèƒŒæ™¯å›¾åŒºåŸŸ */  
     
-    margin: 0px; /* Íâ±ß¾à£¬ÓÃÓÚÓëÆäËûÄÚÈİ±£³Ö¼ä¾à */  
+    margin: 0px; /* å¤–è¾¹è·ï¼Œç”¨äºä¸å…¶ä»–å†…å®¹ä¿æŒé—´è· */  
 }
 
 .scroll-container {  
     display: flex;  
-    margin-top: 5px; /* Í¼Æ¬ºÍ±êÌâÖ®¼äµÄ¼ä¾à */  
-    font-family: Times New Roman; /* ×ÖÌå */  
-    font-size: 14px; /* ×ÖÌå´óĞ¡ */  
-    color: #333; /* ×ÖÌåÑÕÉ« */  
-    white-space: nowrap; /* ·ÀÖ¹±êÌâ»»ĞĞ */
-    overflow-x: auto; /* ÔÊĞíË®Æ½¹ö¶¯ */  
-    scroll-snap-type: x mandatory; /* Ê¹ÓÃCSS¹ö¶¯²¶×½ */  
-    -webkit-overflow-scrolling: touch; /* ÓÅ»¯ÒÆ¶¯¶Ë¹ö¶¯ */  
+    margin-top: 5px; /* å›¾ç‰‡å’Œæ ‡é¢˜ä¹‹é—´çš„é—´è· */  
+    font-family: Times New Roman; /* å­—ä½“ */  
+    font-size: 14px; /* å­—ä½“å¤§å° */  
+    color: #333; /* å­—ä½“é¢œè‰² */  
+    white-space: nowrap; /* é˜²æ­¢æ ‡é¢˜æ¢è¡Œ */
+    overflow-x: auto; /* å…è®¸æ°´å¹³æ»šåŠ¨ */  
+    scroll-snap-type: x mandatory; /* ä½¿ç”¨CSSæ»šåŠ¨æ•æ‰ */  
+    -webkit-overflow-scrolling: touch; /* ä¼˜åŒ–ç§»åŠ¨ç«¯æ»šåŠ¨ */  
 }  
   
 .scroll-item {  
-    scroll-snap-align: start; /* ²¶×½¹ö¶¯Ïîµ½ÈİÆ÷µÄ¿ªÊ¼Î»ÖÃ */  
-    flex: none; /* ·ÀÖ¹flexÏîÄ¿×Ô¶¯µ÷Õû´óĞ¡ */  
-    margin-right: 10px; /* ÉèÖÃ¹ö¶¯ÏîÖ®¼äµÄ¼ä¾à£¨¿ÉÑ¡£© */  
-    text-align: center; /* ÎÄ×Ö¾ÓÖĞ£¨¿ÉÑ¡£© */  
+    scroll-snap-align: start; /* æ•æ‰æ»šåŠ¨é¡¹åˆ°å®¹å™¨çš„å¼€å§‹ä½ç½® */  
+    flex: none; /* é˜²æ­¢flexé¡¹ç›®è‡ªåŠ¨è°ƒæ•´å¤§å° */  
+    margin-right: 10px; /* è®¾ç½®æ»šåŠ¨é¡¹ä¹‹é—´çš„é—´è·ï¼ˆå¯é€‰ï¼‰ */  
+    text-align: center; /* æ–‡å­—å±…ä¸­ï¼ˆå¯é€‰ï¼‰ */  
 }  
   
 .scroll-item img {  
-    max-width: 300pt; /* Í¼Æ¬¿í¶È×ÔÊÊÓ¦ */  
-    height: 100pt; /* ±£³ÖÍ¼Æ¬¿í¸ß±È */  
-    display: block; /* ÒÆ³ıÍ¼Æ¬µ×²¿µÄ¼äÏ¶ */  
-    margin: 0 auto; /* Í¼Æ¬¾ÓÖĞ£¨¿ÉÑ¡£© */  
+    max-width: 300pt; /* å›¾ç‰‡å®½åº¦è‡ªé€‚åº” */  
+    height: 100pt; /* ä¿æŒå›¾ç‰‡å®½é«˜æ¯” */  
+    display: block; /* ç§»é™¤å›¾ç‰‡åº•éƒ¨çš„é—´éš™ */  
+    margin: 0 auto; /* å›¾ç‰‡å±…ä¸­ï¼ˆå¯é€‰ï¼‰ */  
 }  
   
 .scroll-item p {  
-    margin: 10px 0; /* ÎÄ×ÖÉÏÏÂ¼ä¾à£¨¿ÉÑ¡£© */  
+    margin: 10px 0; /* æ–‡å­—ä¸Šä¸‹é—´è·ï¼ˆå¯é€‰ï¼‰ */  
 }
 .register-button {  
-            background-color: green; /* ÉèÖÃ°´Å¥±³¾°ÑÕÉ«ÎªÂÌÉ« */  
-            color: white; /* ÉèÖÃ°´Å¥ÎÄ±¾ÑÕÉ«Îª°×É« */  
-            border: none; /* ÒÆ³ı°´Å¥±ß¿ò */  
-            padding: 10px 20px; /* ÉèÖÃ°´Å¥ÄÚ±ß¾à */  
-            text-align: center; /* ÉèÖÃ°´Å¥ÎÄ±¾¾ÓÖĞ¶ÔÆë */  
-            text-decoration: none; /* ÒÆ³ı°´Å¥ÎÄ±¾ÏÂ»®Ïß */  
-            display: inline-block; /* ÉèÖÃ°´Å¥ÎªÄÚÁª¿é¼¶ÔªËØ */  
-            font-size: 16px; /* ÉèÖÃ°´Å¥ÎÄ±¾×ÖÌå´óĞ¡ */  
-            margin: 4px 2px; /* ÉèÖÃ°´Å¥Íâ±ß¾à */  
-            cursor: pointer; /* ÉèÖÃÊó±êĞüÍ£ÔÚ°´Å¥ÉÏÊ±ÏÔÊ¾ÎªÊÖĞÎ */  
-            border-radius: 5px; /* ÉèÖÃ°´Å¥±ß¿òÔ²½Ç */  
+            background-color: green; /* è®¾ç½®æŒ‰é’®èƒŒæ™¯é¢œè‰²ä¸ºç»¿è‰² */  
+            color: white; /* è®¾ç½®æŒ‰é’®æ–‡æœ¬é¢œè‰²ä¸ºç™½è‰² */  
+            border: none; /* ç§»é™¤æŒ‰é’®è¾¹æ¡† */  
+            padding: 10px 20px; /* è®¾ç½®æŒ‰é’®å†…è¾¹è· */  
+            text-align: center; /* è®¾ç½®æŒ‰é’®æ–‡æœ¬å±…ä¸­å¯¹é½ */  
+            text-decoration: none; /* ç§»é™¤æŒ‰é’®æ–‡æœ¬ä¸‹åˆ’çº¿ */  
+            display: inline-block; /* è®¾ç½®æŒ‰é’®ä¸ºå†…è”å—çº§å…ƒç´  */  
+            font-size: 16px; /* è®¾ç½®æŒ‰é’®æ–‡æœ¬å­—ä½“å¤§å° */  
+            margin: 4px 2px; /* è®¾ç½®æŒ‰é’®å¤–è¾¹è· */  
+            cursor: pointer; /* è®¾ç½®é¼ æ ‡æ‚¬åœåœ¨æŒ‰é’®ä¸Šæ—¶æ˜¾ç¤ºä¸ºæ‰‹å½¢ */  
+            border-radius: 5px; /* è®¾ç½®æŒ‰é’®è¾¹æ¡†åœ†è§’ */  
         }  
 .register-button:hover {  
-            background-color: darkgreen; /* ÉèÖÃÊó±êĞüÍ£ÔÚ°´Å¥ÉÏÊ±°´Å¥±³¾°ÑÕÉ«±äÉî */  
+            background-color: darkgreen; /* è®¾ç½®é¼ æ ‡æ‚¬åœåœ¨æŒ‰é’®ä¸Šæ—¶æŒ‰é’®èƒŒæ™¯é¢œè‰²å˜æ·± */  
         }  
-
+ @media (max-width: 600px){
+     body{
+         background-color:lightblue;
+     }
+ }
 
 
 
