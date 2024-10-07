@@ -52,8 +52,8 @@
             text-align: center; /* 设置按钮文本居中对齐 */  
             text-decoration: none; /* 移除按钮文本下划线 */  
             display: inline-block; /* 设置按钮为内联块级元素 */  
-            font-size: 16px; /* 设置按钮文本字体大小 */  
-            margin: 4px 2px; /* 设置按钮外边距 */  
+            font-size: 24px; /* 设置按钮文本字体大小 */  
+            margin: 30px 300px; /* 设置按钮外边距 */  
             cursor: pointer; /* 设置鼠标悬停在按钮上时显示为手形 */  
             border-radius: 5px; /* 设置按钮边框圆角 */  
         }  
@@ -65,17 +65,35 @@
          background-color:lightblue;
      }
  }
-
-.header{
-    background-color: green;
-    color: white;
-    text-aling: left;
-    padding: 1em 0;
-    font-size: 28px;
-    font-family: Times New Roman;
+.background-box {
+	display:inline-block;
+	background-color: #d3e9c9;
+	padding: 15px;
 }
 
-
+.styled-button {  
+            /* 设置按钮的宽度和高度 */  
+            width: 150px;  
+            height: 50px;  
+              
+            /* 设置按钮的字体 */  
+            font-family: Times New Roman;  
+            font-size: 24px;  
+            font-weight: bold;  
+            color: white; /* 按钮上文字的颜色 */  
+              
+            /* 设置按钮的背景颜色和边框 */  
+            background-color: #4CAF50; /* 绿色背景 */  
+            border: none; /* 去掉默认的边框 */  
+            border-radius: 5px; /* 圆角边框 */  
+              
+            /* 设置按钮的文本对齐和填充 */  
+            text-align: center;  
+            vertical-align: middle;  
+            padding-top: 10px; /* 顶部填充，用于垂直居中 */  
+            cursor: pointer; /* 鼠标悬停时显示为手型 */  
+            margin: 5px 670px;        
+}  
 
 
 
