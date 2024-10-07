@@ -8,24 +8,40 @@
     <style>  
      body {  
             font-family: Times New Roman;  
-            font-size: 20px;
+            font-size: 24px;
             margin: 0;  
             padding: 0;  
             background-color: #f4f4f4;  
         }  
         .container {  
-            width: 80%;  
-            margin: 0 auto;  
-            padding: 2rem 0;  
+	    width: 80%;
+	    display: flex;
+	    flex-wrap:wrap;
+	    margin: 0 auto;  
+            padding: 2rem 0;
+	    gap: 30px; 
         }  
-        .section {  
-            margin-bottom: 2rem;  
-        }  
+	.column {
+	    flex:1;
+	    padding: 5px;
+	    box-sizing: border-box;
+	}
+	.column-left{
+	    flex: 0 0 48%;
+	    background-color: #e9e9e9;
+	}
+	.column-right{
+	    flex: 0 0 48%;
+	    background-color: #e9e9e9;
+	}
         .section h2 {  
-            color: #333;  
+            color: black;  
+	    margin-top: -8px;
+	    margin-bottom: -8px;
         }  
         .section p {  
-            line-height: 1.6;  
+            line-height: 2;  
+	    text-indent: 2em;
         }  
         .btn {  
             display: inline-block;  
@@ -39,7 +55,7 @@
         .btn:hover {  
             background-color: #0056b3;  
         }
- .btn {  
+ 	.btn {  
         padding: 10px 20px;  
         background-color: #4CAF50;  
         color: white;  
@@ -60,23 +76,39 @@
         color: green;  
         margin-top: 20px;  
     }  
+    .responsive-img {
+    	max-width: 100%;
+	height: auto;
+    }
+    ul li{
+	line-height: 1.8;
+    }
     </style>  
 </head>  
 <body>  
     <header>  
         <h1 class='title-with-background'></h1>  
     </header>  
-    <div class="container header">  
+
+    <div class="container">  
         <section class="section">  
-            <h2>Introduction</h2>  
+	<div class="header">
+            <h2 class="background-box">Introduction</h2>  
+	</div>
             <p>The <strong>15th International Conference on Environmental Engineering and Applications (ICEEA 2025)</strong> will be held in Paris, France from May 27-29, 2025. The ICEEA series of conferences has been successfully held in Shanghai, Dubai, Singapore, Nottingham, Chengdu, Kuala Lumpur, Rome, Amsterdam, Prague, and Madrid. ICEEA 2025 aims to provide a forum for researchers and practitioners in the field to share ideas, designs, and experiments. We welcome participation from academia, industry, and government agencies.</p>  
         </section>  
+	
+	<div class="column column-left">
         <section class="section">  
-            <h2>Dates and Location</h2>  
+            <h2 class="background-box">Dates and Location</h2>  
             <p>The conference will be held from <strong>May 27th to29th, 2025</strong> at the <strong>Paris Convention Centre, Paris, France</strong>.</p>  
+	    <img src="Location.png" alt="picture and map of Location" class="responsive-img">
         </section>  
+	</div>
+
+	<div class="column column-right">
 	<section class="section">
-	<h2>Membership of the Committee</h2>
+	<h2 class="background-box">Membership of the Committee</h2>
 	<p>The main members of the Committee for this conference are:</p>
 	<ul>
 	  <li>Head of conference, scientific committee: <strong> Liu XX</strong></li>
@@ -85,35 +117,87 @@
 	  <li>Head of technical support, webmaster: <strong> Li XX</strong></li>
 	  <li>Head of public relationship, volunteers: <strong> Han XX</strong></li>
 	</section>
+	</div>
 
-        <section class="section">  
-            <h2>Conference Schedule</h2>  
-            <p>The conference agenda includes keynote speeches, technical sessions, panel discussions, and exhibition booths showcasing the latest innovations in the field.</p>  
-            <ul>  
-                <li>Keynote Speeches by Industry Leaders</li>  
-                <li>Technical Sessions on Emerging Trends</li>  
-                <li>Panel Discussions on Future Directions</li>  
-                <li>Exhibition of Latest Technologies</li>  
-            </ul>  
-        </section>  
-
+	    <section class="section">  
+            <h2 class="background-box">Brief Conference Schedule</h2>  
+	    <h3> <strong>Arrival and Registration  May 27, 2025 | Tuesday</strong></h3>
+	    <p> The first day is all about registration and sign-in, participants are supposed to finish the sign-in procedure within 10:00 am to 5:00 pm.</p>
+	    <h3> <strong>Opening Remarks & Keynote Speeches & Authors' Presentations May 28, 2025 | Wednesday</strong></h3>
+	    <p> The conference chair will be hosting a opening ceremony around 9:00 am in the morning, and all the participants are supposed to be presented, then the keynote speakers will deliver their spectacular speeches and share their cutting-edge research fruits with the participants. During the intermission, there will be a photo session for all the participants to take a group photo.</p>
+	    <h3><strong> One Day Tour May 29, 2025 | Thursday</strong></h3>
+	    <p> One-Day Tour will be arranged after the conference. Detailed program will be released around early April, please refer to the latest information on the website.</p>
+            </section>  
+	
+	<div class="column column-left">
 	<section class="section">
-		<h2>Call for Papers</h2>
+	     <h2 class="background-box">Important Dates</h2>
+	     <p>Important dates in this conference:</p>
+	     <ul>
+		<li>Submission Deadline: <strong>December 31, 2024</strong></li>
+		<li>Notification Date:  <strong>January 20, 2025</strong></li>
+		<li>Registration Dealine: <strong>February 5, 2025</strong></li>
+		<li>Conference Dates: <strong> May 27-29, 2025</strong></li>
+
+	     </ul>
+	</section>
+	</div>
+
+
+	<div class="column column-right">
+ 	<section class="section">  
+           <h2 class="background-box">Register Now</h2>  
+           <p>Don't miss the opportunity to participate in this prestigious event. Register now to secure your spot!</p>  
+           <button class="register-button" onclick="window.location.href='Register.html'">Register</button> 
+         </section>  
+	 </div>
+
+	
+	<section class="section">
+		<h2 class="background-box">Call for Papers</h2>
 		<p>2025 15th International Conference on Environmental Engineering and Applications (ICEEA 2025) is the premier forum for the presentation of new advances and research results in the fields of theoretical, experimental, and applied Environmental Engineering and Applications. The conference will bring together leading researchers, engineers and scientists in the domain of interest from around the world. Topics of interest for submission include, but are not limited to:</p>
+	</section>
+		
+		<div class="column column-left">
 		<h3>Ecosystem management and sustainable development</h3>
 		<ul>
 			<li>Global environmental change and ecosystem management</li>
 			<li>Integrated ecosystem management</li>
 			<li>Environmental restoration and ecological engineering</li>
 		</ul>
-	</section>
+		</div>
+
+		<div class="column column-right">
+		<h3>Environmental monitoring and management</h3>
+		<ul>
+			<li>Hazardous substances and detection techniques</li>
+			<li>Biodegradation of harmful substances</li>
+			<li>Monitoring and analysis of environmental pollutants</li>
+		</ul>
+		</div>
 	    
-        <section class="section">  
-           <h2>Register Now</h2>  
-           <p>Don't miss the opportunity to participate in this prestigious event. Register now to secure your spot!</p>  
-           <button class="register-button" onclick="window.location.href='Register.html'">Register</button> 
-  
-         </section>  
+
+		<div class="column column-left">
+		<h3>Water resources management and water pollution control</h3>
+		<ul>
+			<li>Water resources and watershed management</li>
+			<li>Industrial wastewater treatment</li>
+			<li>Wastewater and sludge treatment</li>
+		</ul>
+		</div>
+
+		<div class="column column-right">
+		<h3>Atmospheric science and air pollution control</h3>
+		<ul>
+			<li>Atmospheric physics</li>
+			<li>Climate and Climate change</li>
+			<li>Atmospheric modeling and numerical values</li>
+		</ul>
+		</div>		
+
+		 <button class="styled-button">Submission</button> 
+
+
     </div>  
 <div class="scroll-container">  
         <div class="scroll-item">  
