@@ -1,0 +1,113 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Submission Form</title>  
+    <style>  
+        /* 简单的样式，可以根据需要自定义 */  
+        body {  
+            font-family: Arial, sans-serif;  
+            margin: 0;  
+            padding: 20px;  
+        }  
+        .container {  
+            max-width: 600px;  
+            margin: 0 auto;  
+            padding: 20px;  
+            background: #f9f9f9;  
+            border-radius: 8px;  
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+        }  
+        h2 {  
+            text-align: center;  
+        }  
+        .form-group {  
+            margin-bottom: 15px;  
+        }  
+        .form-group label {  
+            display: block;  
+            margin-bottom: 5px;  
+        }  
+        .form-group input,  
+        .form-group select {  
+            width: 100%;  
+            padding: 8px;  
+            box-sizing: border-box;  
+        }  
+        .form-group input[type="file"] {  
+            padding: 5px;  
+        }  
+        .buttons {  
+            display: flex;  
+            justify-content: space-between;  
+            align-items: center;  
+        }  
+        .buttons button {  
+            padding: 10px 15px;  
+            border: none;  
+            border-radius: 5px;  
+            cursor: pointer;  
+        }  
+        .buttons .back-button {  
+            background-color: #007bff;  
+            color: white;  
+        }  
+        .buttons .submit-button {  
+            background-color: #28a745;  
+            color: white;  
+        }  
+        .buttons button:hover {  
+            opacity: 0.9;  
+        }  
+    </style>  
+</head>  
+<body>  
+    <div class="container">  
+            <div class="buttons">  
+                <button type="button" class="back-button" onclick="window.location.href='index.html'">Back</button>  
+            </div>  
+        <h2>Submission Form</h2>  
+        <form id="submissionForm" enctype="multipart/form-data">  
+            <div class="form-group">  
+                <label for="name">Your Name:</label>  
+                <input type="text" id="name" name="name" required>  
+            </div>  
+            <div class="form-group">  
+                <label for="organization">Your Organization:</label>  
+                <input type="text" id="organization" name="organization" required>  
+            </div>  
+            <div class="form-group">  
+                <label for="paper-title">Paper Title:</label>  
+                <input type="text" id="paper-title" name="paper_title" required>  
+            </div>  
+            <div class="form-group">  
+                <label for="paper-file">Upload Paper (Word or PDF):</label>  
+                <input type="file" id="paper-file" name="paper_file" accept=".doc,.docx,.pdf" required>  
+            </div>  
+            <div class="form-group">  
+                <label for="submission-theme">Submission Theme:</label>  
+                <select id="submission-theme" name="submission_theme" required>  
+                    <option value="ecosystem_management">Ecosystem management and sustainable development</option>  
+                    <option value="environmental_monitoring">Environmental monitoring and management</option>  
+                    <option value="water_resources">Water resources management and water pollution control</option>  
+                    <option value="atmospheric_science">Atmospheric science and air pollution control</option>  
+                    <option value="others">Others</option>  
+                </select>  
+            </div>  
+            <div class="buttons">  
+                <button type="submit" class="submit-button">Submit</button>  
+            </div>  
+        </form>  
+        <script>  
+            document.getElementById('submissionForm').addEventListener('submit', function(event) {  
+                event.preventDefault(); // 阻止表单的默认提交行为  
+                window.location.href = 'index.html'; // 重定向到主页  
+            });  
+        </script>  
+    </div>  
+</body>  
+</html>
+
+            
+  
