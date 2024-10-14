@@ -1,4 +1,4 @@
-.title-with-background {  
+﻿.title-with-background {  
     background-image: url('Background.png'); /* 替换为你的图片路径 */  
     background-size: 100% 100%; /* 让背景图覆盖整个标题区域 */  
     background-position: center; /* 背景图居中 */  
@@ -52,9 +52,7 @@
             text-decoration: none; /* 移除按钮文本下划线 */  
             display: inline-block; /* 设置按钮为内联块级元素 */  
             font-size: 24px; /* 设置按钮文本字体大小 */  
-	    position: absolute;
-	    left: 70%;
-	    transform: translateX(-70%);
+
 	    margin: 30px; /* 设置按钮外边距 */  
             cursor: pointer; /* 设置鼠标悬停在按钮上时显示为手形 */  
             border-radius: 5px; /* 设置按钮边框圆角 */  
